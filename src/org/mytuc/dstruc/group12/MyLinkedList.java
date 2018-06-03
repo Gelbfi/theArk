@@ -86,7 +86,6 @@ public class MyLinkedList<E> implements Iterable<E> {
                 p = p.prev;
             }
         }
-
         return p;
     }
 
