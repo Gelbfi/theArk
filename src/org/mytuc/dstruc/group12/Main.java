@@ -24,6 +24,35 @@ public class Main {
     	Animal Luca = new Animal("crocodile", "Luca", "m", 150, 210);
     	
     	
-    	
+    	//create a ship named Noah 
+        
+        Arche ship =new Arche();
+		ship.setName("Noah");
+        
+        // Animals on boarding (manually)
+        
+        ship.AddAnimals(Axel);
+        ship.AddAnimals(Mila);
+        ship.AddAnimals(Marta);
+        ship.AddAnimals(Elias);
+        ship.AddAnimals(Berta);
+        ship.AddAnimals(Luca);
+        
+        //Sorting 
+        ship.show_list();     //print the list before Sorting 
+		
+		System.out.println("---------");
+		
+		ship.insertion_Sort();      // Sorting base on feedQuantity
+		
+		ship.show_list();    // after Sorting 
+     
+        
+        //
+        
+        
+            
+        
+        
     }
 }
